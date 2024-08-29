@@ -38,7 +38,7 @@ NutriProm es una aplicación de reconocimiento de imágenes que convierte predic
 
 1. **Accede a la aplicación:**
 
-   URL local: http://127.0.0.1:7860
+   URL local: http://127.0.0.1:3001
    URL pública: Enlace público (Este enlace caducará en 72 horas).
    Sube una imagen:
 
@@ -48,8 +48,13 @@ NutriProm es una aplicación de reconocimiento de imágenes que convierte predic
 
 ## Estructura del Proyecto
 
-- **backend/**: Carpeta para archivos de datos.
-  - **app.py/**: El archivo principal que contiene la lógica de la aplicación Flask y la integración con Gradio.
+- **app/**: Carpeta para archivos de datos.
+  - **prediction2.py/**: El archivo principal que contiene la lógica de la aplicación con resultados optimos
+- **db/**: Carpeta para archivos de datos.
+  - **conexion.py/**: El archivo de conexion a Always Data y sus variables de entorno
+  - **modelado.py/**: El archivo principal que abstrae y ejecuta comandos SQL para la extraccion de datos
+- **models**: Carpeta para archivos de datos.
+  - **ingredientes_model.pt/**: Archivo de entrenamiento Yolo
 - **requirements.txt**: Archivo de dependencias de Python..
 - **.gitignore**: Archivos y carpetas a ignorar por Git.
 - **README.md**: Documentación del proyecto.
