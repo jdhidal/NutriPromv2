@@ -1,0 +1,25 @@
+names:
+- aguacate
+- arroz
+- carne
+- huevoFrito
+- lechuga
+- papas
+- papasFritas
+- polloAla
+- polloEntero
+- polloPechuga
+- polloPierna
+- polloPospierna
+- salchicha
+- tomate
+nc: 14
+roboflow:
+  license: CC BY 4.0
+  project: grams-ingredients
+  url: https://universe.roboflow.com/mineria-nplbv/grams-ingredients/dataset/10
+  version: 10
+  workspace: mineria-nplbv
+test: ../test/images
+train: /home/erick.olalla/Downloads/Mineria/grams_dataset10/train/images
+val: /home/erick.olalla/Downloads/Mineria/grams_dataset10/valid/images
