@@ -1,6 +1,5 @@
 gradio
 opencv-python
 numpy
-matplotlib
 ultralytics
 python-dotenv
