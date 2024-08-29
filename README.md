@@ -20,8 +20,15 @@ NutriProm es una aplicación de reconocimiento de imágenes que convierte predic
 2. **Configura las variables de entorno**:
    ```bash
    create .env
-   MODEL_PATH=ruta/backend/models/fotos-comida-model (1).h5
-   LABELS_FILE_PATH=ruta/backend/labels.txt
+   Agregar las siguientes variables de entorno: **Tomar en cuenta que las variables de la base de datos son restringidas**
+   
+   DB_HOST=""""
+   DB_USER=""
+   DB_PASSWORD=""
+   DB_NAME=""
+
+   ![Crear Tabla](images/tabla1.jpeg)
+   ![Ejemplo](images/tabla2.jpeg)
 
 2. **Ejecuta el programa**:
    ```bash
