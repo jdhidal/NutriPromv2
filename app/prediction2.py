@@ -8,20 +8,20 @@ from PIL import Image
 import io
 import sys
 import os
-import ollama  # Importar la biblioteca de Ollama
+import ollama
 
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from db.modelado import obtener_datos_alimentos
 PORT = int(os.getenv("PORT", 3001))
 
-# Función para calcular los píxeles en una máscara
+
 def calcular_pixeles(mascara):
     return np.count_nonzero(mascara)
 
 # Cargar el modelo entrenado
 model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'ingredientes_model.pt')
-model_path = os.path.abspath(model_path)  # Convertir a una ruta absoluta
+model_path = os.path.abspath(model_path)  
 model = YOLO(model_path)
 
 # Función para redimensionar la imagen
